@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine’s Day! ❤️</h1>
+        <p class="heart">💖</p>
+        <p>Semoga harimu penuh cinta dan kebahagiaan!</p>
+        <button onclick="changeMessage()">Klik untuk Kejutan!</button>
+    </div>
+    <script>
+        function changeMessage() {
+            document.querySelector(".container p").innerText = "Kamu sangat spesial! 💕";
+        }
+    </script>
+</body>
+</html>
